@@ -42,7 +42,7 @@ function onMessageHandler (target, context, msg, self) {
   if (commandName === '!clear'){
 	  client.clear(target);
   } else {
-    if(countWords(commandName) <= 3)
+    if(countWords(commandName) <= global.gConfig.min_word_count)
     {
       client.deletemessage(target, context["id"]);
       client.say(target, `${context["username"]} Please use longer sentences.`);

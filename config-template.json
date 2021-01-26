@@ -7,7 +7,9 @@
         "json_indentation": 4,
 		"identity":{
 			"username": "<BOT_USERNAME>",
-			"password": "oauth:<KEY>"
+            "password": "oauth:<KEY>",
+            "api_client_id": "<api_client_id>",
+            "api_client_secret": "<api_client_secret>"
 		},
 		"channels": [
             "<CHANNEL_NAME>"
